@@ -86,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void selectedTab(String tabId)
     {
+        //
         mCurrentTab = tabId;
 
         if(mStacks.get(tabId).size() == 0){
@@ -118,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction ft = manager.beginTransaction();
         ft.replace(R.id.contentd, fragment);
         ft.commit();
+
     }
 
     public void popFragments(){
